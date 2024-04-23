@@ -1,0 +1,36 @@
+rosbag2_bagfile_information:
+  compression_format: ''
+  compression_mode: ''
+  custom_data: {}
+  duration:
+    nanoseconds: 624698000000
+  files:
+  - duration:
+      nanoseconds: 624698000000
+    message_count: 21865
+    path: house.db3
+    starting_time:
+      nanoseconds_since_epoch: 94388000000
+  message_count: 21865
+  relative_file_paths:
+  - house.db3
+  ros_distro: rosbags
+  starting_time:
+    nanoseconds_since_epoch: 94388000000
+  storage_identifier: sqlite3
+  topics_with_message_count:
+  - message_count: 18742
+    topic_metadata:
+      name: /odom
+      offered_qos_profiles: ''
+      serialization_format: cdr
+      type: nav_msgs/msg/Odometry
+      type_description_hash: RIHS01_3cc97dc7fb7502f8714462c526d369e35b603cfc34d946e3f2eda2766dfec6e0
+  - message_count: 3123
+    topic_metadata:
+      name: /scan
+      offered_qos_profiles: ''
+      serialization_format: cdr
+      type: sensor_msgs/msg/LaserScan
+      type_description_hash: RIHS01_64c191398013af96509d518dac71d5164f9382553fce5c1f8cca5be7924bd828
+  version: 8
