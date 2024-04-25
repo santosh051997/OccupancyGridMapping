@@ -19,7 +19,7 @@ def main():
                   P_occ = 0.9	# Probability that cell is occupied with total confidence
                   P_free = 0.3	# Probability that cell is free with total confidence 
                   RESOLUTION = 0.04 # Grid resolution in [m]
-                  MAP_NAME = BAG_FILE_NAME = 'rosbag2_2024_04_24-14_08_46' # map and bagfile name without extension
+                  MAP_NAME = BAG_FILE_NAME = 'house' # map and bagfile name without extension
 
                   N_odom = 0
                   N_scan = 0
@@ -51,7 +51,7 @@ def main():
                   print('\n*** Displaying rosbag files ***')
 
                   typestore = get_typestore(Stores.LATEST)
-                  with Reader('/home/santosh/ros2mapping_ws/src/grid_mapping/bagfiles/rosbag2_2024_04_24-14_08_46') as reader:
+                  with Reader('/home/santosh/ros2mapping_ws/src/grid_mapping/bagfiles/house') as reader:
                         for connection, timestamp, rawdata in reader.messages():
                               if connection.topic == '/scan':
                                     N_scan += 1
