@@ -23,27 +23,37 @@ Spawn the mobile robot with virtual lidar sensor attached to the robot body in t
 
 Run the mobile robot with teleoperation (Use following command if use diff_drive_controller plugin in gazebo)
 
+
+```console
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
+
 
 Record the data from /odom and /scan topic in rosbag file.
 
+
+```console
 ros2 bag record /scan /odom
+```
+
 
 Open the map_generator node from grid_mapping package. Change the path to your bag file in following line
 
-with Reader('/path/to/your_bag_file') as reader:
+**with Reader('/path/to/your_bag_file') as reader:**
 
 Also chnage the name for your occupancy grid map here
 
-MAP_NAME = BAG_FILE_NAME = ''
+**MAP_NAME = BAG_FILE_NAME = ''**
 
 Run the map_generator node.
 
+```console
 cd ~/occupancygrid_ws/
 
 . install/setup.bash
 
 ros2 run grid_mapping map_generator.py
+```
 
 
 
