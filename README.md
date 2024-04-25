@@ -40,7 +40,9 @@ MAP_NAME = BAG_FILE_NAME = ''
 Run the map_generator node.
 
 cd ~/occupancygrid_ws/
+
 . install/setup.bash
+
 ros2 run grid_mapping map_generator.py
 
 
